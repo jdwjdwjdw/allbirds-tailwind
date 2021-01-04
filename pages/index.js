@@ -73,14 +73,14 @@ export default function Home() {
       ]
     },
     {
-      name: "Women's Wool Runner Mizzles",
+      name: "Women's Wool Runner-up Mizzles",
       description: "Our weather-ready sneaker made with merino wool and Puddle Guard™.",
       styles: [
         {
           name: "Natural Gray (Cream Sole)",
           price: "$115",
           colors: ['#585c60', '#e2e2da'],
-          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/6zdZ6PC1jhCrgl1lilg7N8/1",
+          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/1vj0oKn4Grnojpwe2UkKh1/1",
         },
         {
           name: "Savanna Night (Cream Sole)",
@@ -133,14 +133,14 @@ export default function Home() {
       ]
     },
     {
-      name: "Women's Wool Runner Mizzles",
-      description: "Our weather-ready sneaker made with merino wool and Puddle Guard™.",
+      name: "Women's Tree Dashers",
+      description: "Our running shoe designed with breathable Tree material.",
       styles: [
         {
           name: "Natural Gray (Cream Sole)",
           price: "$115",
           colors: ['#585c60', '#e2e2da'],
-          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/6zdZ6PC1jhCrgl1lilg7N8/1",
+          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/5j8qUlAiAUaUGHhhAwNUEH/1",
         },
         {
           name: "Savanna Night (Cream Sole)",
@@ -193,14 +193,14 @@ export default function Home() {
       ]
     },
     {
-      name: "Women's Wool Runner Mizzles",
-      description: "Our weather-ready sneaker made with merino wool and Puddle Guard™.",
+      name: "Women's Wool Dasher Mizzles",
+      description: "Our weather-ready running shoe made with ZQ merino wool and Puddle Guard®.",
       styles: [
         {
           name: "Natural Gray (Cream Sole)",
           price: "$115",
           colors: ['#585c60', '#e2e2da'],
-          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/6zdZ6PC1jhCrgl1lilg7N8/1",
+          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/40z9mI7z1Zi33twT9eYS1z/2",
         },
         {
           name: "Savanna Night (Cream Sole)",
@@ -253,14 +253,14 @@ export default function Home() {
       ]
     },
     {
-      name: "Women's Wool Runner Mizzles",
-      description: "Our weather-ready sneaker made with merino wool and Puddle Guard™.",
+      name: "Women's Wool Runners",
+      description: "Our original everyday sneaker made with cozy merino wool.",
       styles: [
         {
           name: "Natural Gray (Cream Sole)",
           price: "$115",
           colors: ['#585c60', '#e2e2da'],
-          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/6zdZ6PC1jhCrgl1lilg7N8/1",
+          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/5PIOvGho6fumKEdjq2M914/1",
         },
         {
           name: "Savanna Night (Cream Sole)",
@@ -313,14 +313,14 @@ export default function Home() {
       ]
     },
     {
-      name: "Women's Wool Runner Mizzles",
-      description: "Our weather-ready sneaker made with merino wool and Puddle Guard™.",
+      name: "Women's Wool Pipers",
+      description: "Our low top sneaker made with cozy merino wool.",
       styles: [
         {
           name: "Natural Gray (Cream Sole)",
           price: "$115",
           colors: ['#585c60', '#e2e2da'],
-          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/6zdZ6PC1jhCrgl1lilg7N8/1",
+          image: "https://cdn.allbirds.com/image/fetch/q_auto,f_auto/w_530,f_auto,q_auto,b_rgb:f5f5f5/https://cdn.allbirds.com/image/upload/f_auto,q_auto/v1/production/colorway/en-US/images/7xIcdyn4O7a1sxmqACZxVL/1",
         },
         {
           name: "Savanna Night (Cream Sole)",
@@ -421,13 +421,13 @@ export default function Home() {
           <div className=" py-2 bg-gray-100 overflow-x-auto scrollbars-hidden">
             <div className="px-8 text-sm inline-flex space-x-5">
               {categories.map(category => (
-                <a href="#" className=" font-medium text-gray-800 whitespace-nowrap" >{category}</a>
+                <a href="#" key={category} className=" font-medium text-gray-800 whitespace-nowrap" >{category}</a>
               ))}
             </div>
           </div>
         </div>
         <div>
-          <div className="py-6 px-8">
+          <div className="py-6 px-8 space-y-14">
             {products.map(product => (
               <div>
                 <div>
@@ -475,6 +475,22 @@ export default function Home() {
           </div>
         </div>
       </main>
+      <footer className="bg-gray-800 py-12">
+        <div className="px-6">
+          <form action="#" method="POST">
+            <div>
+              <label htmlFor="email_address" className="block text-white text-sm font-medium">Enter your email to stay in touch!</label>
+              <div className="mt-1.5 relative">
+                <input type="text" className="block w-full bg-gray-600 border-2 border-transparent focus:border-white text-white focus:ring-0 transition" />
+                <div className="absolute inset-0 border-b-2 border-white pointer-events-none" aria-hidden></div>
+              </div>
+            </div>
+            <div className="mt-6">
+              <button type="submit" className="block w-full px-4 py-3 rounded bg-gray-600 text-white font-bold text-sm uppercase tracking-widest hover:bg-white hover:text-gray-900 focus:outline-none">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </footer>
     </div>
   )
 }
