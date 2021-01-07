@@ -402,13 +402,13 @@ export default function Home() {
       </header>
       <main>
         <div>
-          <div className="flex items-center justify-between py-4 px-8 pt-4 pb-3">
+          <div className="flex items-center justify-between px-8 pt-4 pb-3 md:px-12">
             <div>
               <div className="text-xs font-bold text-gray-900 space-x-1">
                 <a href="#" className="underline">Home</a>
                 <span>/</span>
               </div>
-              <h1 className="text-lg font-bold text-gray-900">
+              <h1 className="text-lg font-bold text-gray-900 md:text-2xl">
                 Women's Shoes
               </h1>
             </div>
@@ -419,7 +419,7 @@ export default function Home() {
             </div>
           </div>
           <div className=" py-2 bg-gray-100 overflow-x-auto scrollbars-hidden">
-            <div className="px-8 text-sm inline-flex space-x-5">
+            <div className="px-8 text-sm inline-flex space-x-5 md:px-12">
               {categories.map(category => (
                 <a href="#" key={category} className=" font-medium text-gray-800 whitespace-nowrap" >{category}</a>
               ))}
@@ -427,18 +427,18 @@ export default function Home() {
           </div>
         </div>
         <div>
-          <div className="py-6 px-8 space-y-14">
+          <div className="py-6 px-8 space-y-14 md:px-12">
             {products.map(product => (
               <div>
                 <div>
-                  <h2 className="text-lg font-bold">{product.name}</h2>
+                  <h2 className="text-lg font-bold md:text-xl">{product.name}</h2>
                   <p className="text-sm font-medium text-gray-800">{product.description}</p>
                 </div>
                 <div className="mt-4 shadow-xl">
                   <div className="shadow-lg">
                     <a href="#">
                       <div>
-                        <img src={product.styles[0].image} alt=""/>
+                        <img className="w-full" src={product.styles[0].image} alt=""/>
                       </div>
                       <div className="px-4 pt-3">
                         <h3 className="text-sm font-bold">{product.name}</h3>
@@ -447,7 +447,7 @@ export default function Home() {
                     </a>
                     <div className="mt-1 px-4 pb-4">
                       <p className=" text-sm font-medium  text-gray-800">{product.styles[0].price}</p>
-                      <div className=" mt-4 flex space-x-6">
+                      <div className=" mt-4 flex items-center space-x-6">
                         {product.styles.slice(0, 5).map((style, i) => (
                           <button className={`h-6 w-6 flex flex-col border border-gray-300 rounded-full overflow-hidden focus:ring-2 focus:ring-offset-1 focus:ring-gray-900 focus:outline-none ${i === 0 ? 'ring-2 ring-offset-1 ring-gray-300' : ''}`}>
                             <span className="sr-only">{style.name}</span>
@@ -457,6 +457,9 @@ export default function Home() {
                             </span>
                           </button>
                         ))}
+                        <button type="button" className="h-7 w-7 border rounded-full flex items-center justify-center hover:border-gray-400">
+                          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                        </button>
                       </div>
                     </div>
                     <div className="border-t">
